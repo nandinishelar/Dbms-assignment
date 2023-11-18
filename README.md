@@ -4,7 +4,6 @@ Assumptions
 *Each passenger has separate ticket.
 *Each train has fix coaches they don't interchange.
 *Delay(more than 30 min) will be known after contacting with driver or tracking the live location of train if there will be delay the delay variable will be 1 and available standby train will be assigned to the train if not available same train will be used for further journey otherwise delay variable will be 0.
-[createquery.docx](https://github.com/nandinishelar/Dbms-assignment/files/13398755/createquery.docx)
 vishakha Mahajan
 ER Diagram, Creation of Relational Schema, Insertion of data into tables.
 Nandini shelar
