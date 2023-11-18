@@ -8,5 +8,5 @@ vishakha Mahajan
 ER Diagram, Creation of Relational Schema, Insertion of data into tables.
 Nandini shelar
 Relations from ER diagram, Insertion of data into tables.
-Suraj Cha0gule
+Suraj Chaogule
 Data Collection and Organization.
