@@ -1,0 +1,230 @@
+﻿SET B
+4)select r.* from Route r ,booked_ticket where agent_id!='null' and booked_ticket.route_id=r.route_id;
++----------+-----------------------------+----------+------------------------+---------------------------------------+
+| route_id | route_name                  | distance | time_taken             | operating_days                        |
++----------+-----------------------------+----------+------------------------+---------------------------------------+
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R002     | New Delhi - Himachal        |      412 | 6 hours 10 minutes     | 6 days a week except Thursdays        |
+| R002     | New Delhi - Himachal        |      412 | 6 hours 10 minutes     | 6 days a week except Thursdays        |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R002     | New Delhi - Himachal        |      412 | 6 hours 10 minutes     | 6 days a week except Thursdays        |
+| R009     | Bhopal - Indore             |      246 | 3 hours                | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R006     | Bhopal-Delhi                |      700 | 7 hours and 45 minutes | 6 days in a week but not on Saturdays |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R001     | Mumbai Central- Gandhinagar |      548 | 5 hours 40 minutes     | 6 days a week except Sundays          |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R002     | New Delhi - Himachal        |      412 | 6 hours 10 minutes     | 6 days a week except Thursdays        |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R010     | Mumbai - Goa                |      588 |  6 hours               | Every day                             |
+| R008     | Dharwad - Bengaluru         |      432 |  5 hours               | "Monday                               |
+| R008     | Dharwad - Bengaluru         |      432 |  5 hours               | "Monday                               |
+| R008     | Dharwad - Bengaluru         |      432 |  5 hours               | "Monday                               |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
+| R020     | Goa-Mumbai                  |      588 |  6 hours               | Every day                             |
++----------+-----------------------------+----------+------------------------+---------------------------------------+
+58 rows in set (0.00 sec)
+
+
+
+Q1) SELECT      s.*,     dr.*  FROM      schedule s,driver dr,     DriverRoster d where s.date = d.date  and dr.driver_id=d.driver_id  and    s.date = '2023-10-10' AND d.remark = 'Main Driver' ORDER BY      s.depart_time;
++-------------+------------+----------+----------+--------------+-------------+------------+-----------+---------------+------------+-------------------+
+| schedule_id | station_id | route_id | train_id | arrival_time | depart_time | date       | driver_id | driver_name   | phone      | city_of_residance |
++-------------+------------+----------+----------+--------------+-------------+------------+-----------+---------------+------------+-------------------+
+| Sc39        | S32        |  R005    |  t9      | 21:35:00     | 00:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc39        | S32        |  R005    |  t9      | 21:35:00     | 00:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc39        | S32        |  R005    |  t9      | 21:35:00     | 00:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc39        | S32        |  R005    |  t9      | 21:35:00     | 00:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc44        | S29        |  R006    |  t6      | 20:45:00     | 00:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc44        | S29        |  R006    |  t6      | 20:45:00     | 00:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc44        | S29        |  R006    |  t6      | 20:45:00     | 00:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc44        | S29        |  R006    |  t6      | 20:45:00     | 00:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc51        | S7         |  R001    |  t7      | 11:40:00     | 00:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc51        | S7         |  R001    |  t7      | 11:40:00     | 00:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc51        | S7         |  R001    |  t7      | 11:40:00     | 00:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc51        | S7         |  R001    |  t7      | 11:40:00     | 00:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc57        | S13        |  R002    |  t1      | 12:10:00     | 00:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc57        | S13        |  R002    |  t1      | 12:10:00     | 00:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc57        | S13        |  R002    |  t1      | 12:10:00     | 00:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc57        | S13        |  R002    |  t1      | 12:10:00     | 00:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc61        | S42        |  R009    |  t5      | 13:00:00     | 00:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc61        | S42        |  R009    |  t5      | 13:00:00     | 00:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc61        | S42        |  R009    |  t5      | 13:00:00     | 00:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc61        | S42        |  R009    |  t5      | 13:00:00     | 00:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc45        | S1         |  R001    |  t7      | 00:00:00     | 06:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc45        | S1         |  R001    |  t7      | 00:00:00     | 06:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc45        | S1         |  R001    |  t7      | 00:00:00     | 06:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc45        | S1         |  R001    |  t7      | 00:00:00     | 06:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc52        | S8         |  R002    |  t1      | 00:00:00     | 06:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc52        | S8         |  R002    |  t1      | 00:00:00     | 06:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc52        | S8         |  R002    |  t1      | 00:00:00     | 06:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc52        | S8         |  R002    |  t1      | 00:00:00     | 06:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc46        | S2         |  R001    |  t7      | 06:45:00     | 06:55:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc46        | S2         |  R001    |  t7      | 06:45:00     | 06:55:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc46        | S2         |  R001    |  t7      | 06:45:00     | 06:55:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc46        | S2         |  R001    |  t7      | 06:45:00     | 06:55:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc53        | S9         |  R002    |  t1      | 07:00:00     | 07:10:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc53        | S9         |  R002    |  t1      | 07:00:00     | 07:10:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc53        | S9         |  R002    |  t1      | 07:00:00     | 07:10:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc53        | S9         |  R002    |  t1      | 07:00:00     | 07:10:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc47        | S3         |  R001    |  t7      | 07:30:00     | 07:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc47        | S3         |  R001    |  t7      | 07:30:00     | 07:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc47        | S3         |  R001    |  t7      | 07:30:00     | 07:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc47        | S3         |  R001    |  t7      | 07:30:00     | 07:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc54        | S10        |  R002    |  t1      | 08:00:00     | 08:10:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc54        | S10        |  R002    |  t1      | 08:00:00     | 08:10:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc54        | S10        |  R002    |  t1      | 08:00:00     | 08:10:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc54        | S10        |  R002    |  t1      | 08:00:00     | 08:10:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc48        | S4         |  R001    |  t7      | 08:45:00     | 08:55:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc48        | S4         |  R001    |  t7      | 08:45:00     | 08:55:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc48        | S4         |  R001    |  t7      | 08:45:00     | 08:55:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc48        | S4         |  R001    |  t7      | 08:45:00     | 08:55:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc49        | S5         |  R001    |  t7      | 09:30:00     | 09:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc49        | S5         |  R001    |  t7      | 09:30:00     | 09:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc49        | S5         |  R001    |  t7      | 09:30:00     | 09:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc49        | S5         |  R001    |  t7      | 09:30:00     | 09:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc55        | S11        |  R002    |  t1      | 09:30:00     | 09:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc55        | S11        |  R002    |  t1      | 09:30:00     | 09:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc55        | S11        |  R002    |  t1      | 09:30:00     | 09:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc55        | S11        |  R002    |  t1      | 09:30:00     | 09:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc58        | S26        |  R009    |  t5      | 00:00:00     | 10:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc58        | S26        |  R009    |  t5      | 00:00:00     | 10:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc58        | S26        |  R009    |  t5      | 00:00:00     | 10:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc58        | S26        |  R009    |  t5      | 00:00:00     | 10:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc50        | S6         |  R001    |  t7      | 10:45:00     | 10:55:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc50        | S6         |  R001    |  t7      | 10:45:00     | 10:55:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc50        | S6         |  R001    |  t7      | 10:45:00     | 10:55:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc50        | S6         |  R001    |  t7      | 10:45:00     | 10:55:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc56        | S12        |  R002    |  t1      | 10:50:00     | 11:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc56        | S12        |  R002    |  t1      | 10:50:00     | 11:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc56        | S12        |  R002    |  t1      | 10:50:00     | 11:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc56        | S12        |  R002    |  t1      | 10:50:00     | 11:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc59        | S40        |  R009    |  t5      | 10:50:00     | 11:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc59        | S40        |  R009    |  t5      | 10:50:00     | 11:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc59        | S40        |  R009    |  t5      | 10:50:00     | 11:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc59        | S40        |  R009    |  t5      | 10:50:00     | 11:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc60        | S41        |  R009    |  t5      | 12:00:00     | 12:10:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc60        | S41        |  R009    |  t5      | 12:00:00     | 12:10:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc60        | S41        |  R009    |  t5      | 12:00:00     | 12:10:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc60        | S41        |  R009    |  t5      | 12:00:00     | 12:10:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc40        | S8         |  R006    |  t6      | 00:00:00     | 13:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc40        | S8         |  R006    |  t6      | 00:00:00     | 13:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc40        | S8         |  R006    |  t6      | 00:00:00     | 13:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc40        | S8         |  R006    |  t6      | 00:00:00     | 13:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc41        | S26        |  R006    |  t6      | 14:30:00     | 14:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc41        | S26        |  R006    |  t6      | 14:30:00     | 14:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc41        | S26        |  R006    |  t6      | 14:30:00     | 14:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc41        | S26        |  R006    |  t6      | 14:30:00     | 14:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc34        | S19        |  R005    |  t9      | 00:00:00     | 15:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc34        | S19        |  R005    |  t9      | 00:00:00     | 15:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc34        | S19        |  R005    |  t9      | 00:00:00     | 15:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc34        | S19        |  R005    |  t9      | 00:00:00     | 15:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc62        | S19        |  R010    |  t13     | 00:00:00     | 15:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc62        | S19        |  R010    |  t13     | 00:00:00     | 15:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc62        | S19        |  R010    |  t13     | 00:00:00     | 15:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc62        | S19        |  R010    |  t13     | 00:00:00     | 15:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc35        | S20        |  R005    |  t9      | 16:30:00     | 16:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc35        | S20        |  R005    |  t9      | 16:30:00     | 16:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc35        | S20        |  R005    |  t9      | 16:30:00     | 16:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc35        | S20        |  R005    |  t9      | 16:30:00     | 16:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc42        | S27        |  R006    |  t6      | 16:30:00     | 16:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc42        | S27        |  R006    |  t6      | 16:30:00     | 16:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc42        | S27        |  R006    |  t6      | 16:30:00     | 16:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc42        | S27        |  R006    |  t6      | 16:30:00     | 16:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc63        | S21        |  R010    |  t13     | 16:50:00     | 17:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc63        | S21        |  R010    |  t13     | 16:50:00     | 17:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc63        | S21        |  R010    |  t13     | 16:50:00     | 17:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc63        | S21        |  R010    |  t13     | 16:50:00     | 17:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc36        | S21        |  R005    |  t9      | 17:30:00     | 17:40:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc36        | S21        |  R005    |  t9      | 17:30:00     | 17:40:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc36        | S21        |  R005    |  t9      | 17:30:00     | 17:40:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc36        | S21        |  R005    |  t9      | 17:30:00     | 17:40:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc64        | S43        |  R010    |  t13     | 18:00:00     | 18:10:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc64        | S43        |  R010    |  t13     | 18:00:00     | 18:10:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc64        | S43        |  R010    |  t13     | 18:00:00     | 18:10:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc64        | S43        |  R010    |  t13     | 18:00:00     | 18:10:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc37        | S30        |  R005    |  t9      | 18:40:00     | 18:50:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc37        | S30        |  R005    |  t9      | 18:40:00     | 18:50:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc37        | S30        |  R005    |  t9      | 18:40:00     | 18:50:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc37        | S30        |  R005    |  t9      | 18:40:00     | 18:50:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc43        | S28        |  R006    |  t6      | 18:40:00     | 18:50:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc43        | S28        |  R006    |  t6      | 18:40:00     | 18:50:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc43        | S28        |  R006    |  t6      | 18:40:00     | 18:50:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc43        | S28        |  R006    |  t6      | 18:40:00     | 18:50:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
+| Sc38        | S31        |  R005    |  t9      | 19:50:00     | 20:00:00    | 2023-10-10 | d6        |  Pooja Reddy  | 2147483647 |        |ad
+| Sc38        | S31        |  R005    |  t9      | 19:50:00     | 20:00:00    | 2023-10-10 | d4        |  Aarti Patel  | 2147483647 |          |
+| Sc38        | S31        |  R005    |  t9      | 19:50:00     | 20:00:00    | 2023-10-10 | d3        |  Rahul Gupta  | 2147483647 |        |re
+| Sc38        | S31        |  R005    |  t9      | 19:50:00     | 20:00:00    | 2023-10-10 | d2        |  Priya Sharma | 2147483647 |           |
++-------------+------------+----------+----------+--------------+-------------+------------+-----------+---------------+------------+-------------------+
+124 rows in set (0.14 sec)
+
+
+
+Q5) select a.* from  agent a where month = 'september' and commission =( select max(commission) from agent where  month = 'september');
++----------+--------------+----------------+----------------+-----------+------------+
+| agent_id | agentname    | contact_number | address        | month     | commission |
++----------+--------------+----------------+----------------+-----------+------------+
+| a3       | Arjun Sharma |     2147483647 | 789 Oak Street | september |       2250 |
++----------+--------------+----------------+----------------+-----------+------------+
+1 row in set (0.00 sec)
+
+
+3)
+
+select     a.agent_id,     a.agentname,     a.contact_number,     a.address,     t.route_id,     count(case when t.status = 'confirm' then 1 end) * 100.0 / count(*) AS percentage_confirmed_bookings from      booked_ticket t left join      agent a on t.agent_id
+= a.agent_id  where      month(t.journeydate) = 10 and year(t.journeydate) = year(curdate()) and a.agent_id is not null group by t.agent_id, a.agentname, a.contact_number, a.address, t.route_id ORDER BY   percentage_confirmed_bookings desc;
++----------+-----------------+----------------+-----------------------+----------+-------------------------------+
+| agent_id | agentname       | contact_number | address               | route_id | percentage_confirmed_bookings |
++----------+-----------------+----------------+-----------------------+----------+-------------------------------+
+| a11      | Aarush Banerjee |     2147483647 | 567 Pineapple Street  | R020     |                     100.00000 |
+| a14      | Myra Reddy      |     2147483647 | 456 Lime Street       | R008     |                     100.00000 |
+| a15      | Kabir Malhotra  |     2147483647 | 789 Grape Street      | R008     |                     100.00000 |
+| a16      | Avani Verma     |     2147483647 | 234 Banana Street     | R001     |                     100.00000 |
+| a20      | Zara Sharma     |     2147483647 | 456 Avocado Street    | R008     |                     100.00000 |
+| a23      | Yuvaan Rana     |     2147483647 | 567 Pear Street       | R020     |                     100.00000 |
+| a8       | Saanvi Desai    |     2147483647 | 321 Walnut Street     | R020     |                     100.00000 |
+| a17      | Aryan Bhatnagar |     2147483647 | 567 Watermelon Street | R001     |                       0.00000 |
++----------+-----------------+----------------+-----------------------+----------+-------------------------------+
+8 rows in set (0.00 sec)
+
+2)select coaches.* from coaches where distance_after_last_maintenance between 4000 and 4900 and  train_id in(select train_id from schedule where month(date)=month('2023-09-10'));
+Empty set (0.00 sec)
