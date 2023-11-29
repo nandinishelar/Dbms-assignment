@@ -1,4 +1,5 @@
-![WhatsApp Image 2023-11-17 at 9 21 23 PM](https://github.com/nandinishelar/Dbms-assignment/assets/99242347/a913133f-33ee-43cd-8234-e53a56afdc4b)
+![IMG20231129201939](https://github.com/nandinishelar/Dbms-assignment/assets/99242347/832934e8-f431-4eff-b65f-4121aeb376a4)
+
 # Dbms-assignment
 ***Assumptions ***
 *Each passenger has separate ticket.
