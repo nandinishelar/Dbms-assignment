@@ -1,0 +1,94 @@
+﻿
+question 1:-
+
+select distinct train_id from schedule where date !='2023-10-10';
++----------+
+| train_id |
++----------+
+|  t1      |
+|  t11     |
+|  t13     |
+|  t4      |
+|  t5      |
+|  t6      |
+|  t7      |
+|  t8      |
+|  t9      |
++----------+
+9 rows in set (0.07 sec)
+
+
+question 2:-
+select t.train_id,count(b.ticket_id) from train t join coaches c on t.train_id=c.train_id join booked_ticket b on b.coach_id=c.coach_id join Route r on r.route_id=b.route_id where r.route_name='Dharwad - Bengaluru' and month(b.journeydate)=10 and year(b.journeydate)=year(curdate()) group by t.train_id order by count(b.ticket_id) asc;
++----------+--------------------+
+| train_id | count(b.ticket_id) |
++----------+--------------------+
+| t8       |                  4 |
++----------+--------------------+
+1 row in set (0.13 sec)
+
+
+question 3:-
+select distinct r.route_name from Route r,booked_ticket,(select booked_ticket.route_id,count(booked_ticket.ticket_id) from booked_ticket   group by booked_ticket.route_id order by count(booked_ticket.ticket_id) desc limit 1 ) as T  where booked_ticket.route_id=r.route_id ;
+
++-----------------------------+
+| route_name                  |
++-----------------------------+
+| Mumbai Central- Gandhinagar |
+| New Delhi - Himachal        |
+| Bhopal-Delhi                |
+| Dharwad - Bengaluru         |
+| Bhopal - Indore             |
+| Mumbai - Goa                |
+| Goa-Mumbai                  |
++-----------------------------+
+7 rows in set (0.01 sec)
+question 4;
+select distinct  p.name from passenger p,booked_ticket ,(select booked_ticket.passenger_id,count(ticket_id) from booked_ticket  group by booked_ticket .passenger_id having count(booked_ticket .ticket_id)>=3) as t where booked_ticket.passenger_id=p.passenger_id;
++-----------------+
+| name            |
++-----------------+
+| Sophia Martinez |
+| Ethan Davis     |
+| Olivia Garcia   |
+| David Thompson  |
+| Sarah Wilson    |
+| Michael Brown   |
+| Emily Johnson   |
+| Lily Mitchell   |
+| Oliver Lopez    |
+| Layla Wright    |
+| Riley Ward      |
+| Grayson Wood    |
+| Scarlett Ross   |
+| Aiden Hill      |
+| Madison Baker   |
+| Daniel Adams    |
+| Chloe Green     |
+| Jane Smith      |
+| Evelyn Scott    |
+| Elijah King     |
+| Amelia Wright   |
+| William Murphy  |
+| Harper Gonzalez |
+| Logan Patel     |
+| Mia Kim         |
+| Benjamin Lee    |
+| Ava Nguyen      |
+| Liam Hernandez  |
+| John Doe        |
++-----------------+
+29 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
