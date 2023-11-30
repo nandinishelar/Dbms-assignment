@@ -1,5 +1,6 @@
 ![IMG_20231129_221423](https://github.com/nandinishelar/Dbms-assignment/assets/99242347/228605d1-6ad7-4e77-98e5-47c8d710c6f5)
-![IMG20231129201939](https://github.com/nandinishelar/Dbms-assignment/assets/99242347/832934e8-f431-4eff-b65f-4121aeb376a4)
+![IMG-20231130-WA0020](https://github.com/nandinishelar/Dbms-assignment/assets/99242347/318bbecc-d79d-4796-969e-f864ec64257f)
+
 
 # Dbms-assignment
 ***Assumptions ***
